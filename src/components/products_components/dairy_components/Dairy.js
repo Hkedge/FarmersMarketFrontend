@@ -10,7 +10,7 @@ function EggsAndDairy({setCartItemTotal, cartItemTotal}) {
 
   useEffect(() => {
     setLoading(true);
-    fetch('https://fetch-farm-web-service.onrender.com/api/products/category/Eggs%20&%20Dairy')
+    fetch('https://fetch-farm-web-service.onrender.com/api/products/category/Dairy')
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
