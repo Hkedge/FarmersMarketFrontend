@@ -20,7 +20,7 @@ export async function fetchUserOpenOrders(sessionId) {
   try {
     const header = setHeader()
 
-    const url = `https://farmers-market-1oeq.onrender.com/api/orders/user/open`;
+    const url = `https://fetch-farm-web-service.onrender.com/api/orders/user/open`;
     const response = await fetch(url, {
       method: "POST",
       headers: header,
@@ -49,7 +49,7 @@ export async function fetchAddToOrder(sessionId, productId, quantity) {
   try {
     const header = setHeader()
 
-    const url = `https://farmers-market-1oeq.onrender.com/api/orders/user/open/add_product`;
+    const url = `https://fetch-farm-web-service.onrender.com/api/orders/user/open/add_product`;
     const response = await fetch(url, {
       method: "POST",
       headers: header,
@@ -71,7 +71,7 @@ export async function fetchAddToOrder(sessionId, productId, quantity) {
 
 export async function fetchUpdateOrderProductQuantity(orderProductId, quantity) {
   try {
-    const url = `https://farmers-market-1oeq.onrender.com/api/orders/user/open/order_products/${orderProductId}`;
+    const url = `https://fetch-farm-web-service.onrender.com/api/orders/user/open/order_products/${orderProductId}`;
     const response = await fetch(url, {
       method: "PATCH",
       headers: {
@@ -93,7 +93,7 @@ export async function fetchUpdateOrderProductQuantity(orderProductId, quantity) 
 
 export async function fetchRemoveOrderProduct(orderProductId) {
   try {
-    const url = `https://farmers-market-1oeq.onrender.com/api/orders/user/open/order_products/${orderProductId}`;
+    const url = `https://fetch-farm-web-service.onrender.com/api/orders/user/open/order_products/${orderProductId}`;
     const response = await fetch(url, {
       method: "DELETE",
       headers: {
@@ -109,7 +109,7 @@ export async function fetchRemoveOrderProduct(orderProductId) {
 
 export async function fetchCheckout(orderId, orderSum, date) {
   try {
-    const url = `https://farmers-market-1oeq.onrender.com/api/orders/user/open/${orderId}`;
+    const url = `https://fetch-farm-web-service.onrender.com/api/orders/user/open/${orderId}`;
     const response = await fetch(url, {
       method: "PATCH",
       headers: {
@@ -133,7 +133,7 @@ export async function fetchCheckout(orderId, orderSum, date) {
 export async function fetchCancelOrder(orderId){
   
   try {
-    const url = `https://farmers-market-1oeq.onrender.com/api/orders/user/open/${orderId}`;
+    const url = `https://fetch-farm-web-service.onrender.com/api/orders/user/open/${orderId}`;
     const response = await fetch(url, {
       method: "DELETE",
       headers: {
@@ -152,7 +152,7 @@ export async function fetchAllOpenOrders() {
 
   try {
 
-    const url = `https://farmers-market-1oeq.onrender.com/api/orders/open`;
+    const url = `https://fetch-farm-web-service.onrender.com/api/orders/open`;
     const response = await fetch(url, {
       method: "GET",
       headers: {
@@ -174,7 +174,7 @@ export async function fetchUserClosedOrders() {
   try {
     const header = setHeader()
 
-    const url = "https://farmers-market-1oeq.onrender.com/api/orders/user/order_history";
+    const url = "https://fetch-farm-web-service.onrender.com/api/orders/user/order_history";
     const response = await fetch(url, {
       method: "GET",
       headers: header
@@ -192,7 +192,7 @@ export async function fetchUserClosedOrders() {
 export async function fetchStripe() {
 
   try {
-    const url = `https://farmers-market-1oeq.onrender.com/api/config`;
+    const url = `https://fetch-farm-web-service.onrender.com/api/config`;
     const response = await fetch(url, {
       method: "GET", 
       headers: {
@@ -212,7 +212,7 @@ export async function fetchStripe() {
 export async function fetchStripePaymentIntent(checkoutPrice) {
 
   try {
-    const url = `https://farmers-market-1oeq.onrender.com/api/create-payment-intent`;
+    const url = `https://fetch-farm-web-service.onrender.com/api/create-payment-intent`;
     const response = await fetch(url, {
       method: "POST", 
       headers: {

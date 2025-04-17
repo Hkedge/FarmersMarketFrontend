@@ -11,7 +11,7 @@ const PorkProducts = ({setCartItemTotal, cartItemTotal}) => {
     setLoading(true);
     const fetchPorkProducts = async () => {
       try {
-        const response = await fetch("https://farmers-market-1oeq.onrender.com/api/products/subcategory/Pork");
+        const response = await fetch("https://fetch-farm-web-service.onrender.com/api/products/subcategory/Pork");
         const data = await response.json();
         setProducts(data);
         setLoading(false);

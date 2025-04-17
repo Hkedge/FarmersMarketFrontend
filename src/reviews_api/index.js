@@ -19,7 +19,7 @@
 
 export async function getAllReviewsByProductId(productId) {
 console.log('productId :>> ', productId);
-  const response = await fetch(`https://farmers-market-1oeq.onrender.com/api/reviews/${productId}/reviews`, {
+  const response = await fetch(`https://fetch-farm-web-service.onrender.com/api/reviews/${productId}/reviews`, {
     headers: {
       Authorization: `Bearer ${localstoragetoken}`
     }
@@ -32,7 +32,7 @@ console.log('productId :>> ', productId);
 }
 
 export async function createReview(productId, review, token) {
-  const response = await fetch(`https://farmers-market-1oeq.onrender.com/api/reviews/${productId}/reviews`, {
+  const response = await fetch(`https://fetch-farm-web-service.onrender.com/api/reviews/${productId}/reviews`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

@@ -9,7 +9,7 @@ function MeatAndSeafood({setCartItemTotal, cartItemTotal}) {
 
   useEffect(() => {
     setLoading(true);
-    fetch('https://farmers-market-1oeq.onrender.com/api/products/category/Meat%20&%20Seafood')
+    fetch('https://fetch-farm-web-service.onrender.com/api/products/category/Meat%20&%20Seafood')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');

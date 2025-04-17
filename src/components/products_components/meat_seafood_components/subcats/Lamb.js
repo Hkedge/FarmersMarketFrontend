@@ -11,7 +11,7 @@ const LambProducts = ({setCartItemTotal, cartItemTotal}) => {
     setLoading(true);
     const fetchLambProducts = async () => {
       try {
-        const response = await fetch("https://farmers-market-1oeq.onrender.com/api/products/subcategory/Lamb");
+        const response = await fetch("https://fetch-farm-web-service.onrender.com/api/products/subcategory/Lamb");
         const data = await response.json();
         setProducts(data);
         setLoading(false);

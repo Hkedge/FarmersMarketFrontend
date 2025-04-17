@@ -26,7 +26,7 @@ export default function ProductDetails({setCartItemTotal, cartItemTotal}) {
   const [isLoading, setIsLoading] = useState(true);
   
   useEffect(() => {
-    fetch(`https://farmers-market-1oeq.onrender.com/api/products/${id}`)
+    fetch(`https://fetch-farm-web-service.onrender.com/api/products/${id}`)
       .then(response => {
         if (!response.ok) {
           setIsLoading(false);
@@ -223,7 +223,7 @@ export default function ProductDetails({setCartItemTotal, cartItemTotal}) {
 //   const [isReadOnly, setIsReadOnly] = useState(true); // Add state variable for read-only/edit mode
 
 //   useEffect(() => {
-//     fetch(`https://farmers-market-1oeq.onrender.com/api/products/${id}`)
+//     fetch(`https://fetch-farm-web-service.onrender.com/api/products/${id}`)
 //       .then(response => {
 //         if (!response.ok) {
 //           throw new Error('Network response was not ok');

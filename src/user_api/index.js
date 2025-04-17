@@ -4,7 +4,7 @@
 export async function fetchLogin(username, password) {
 
   try {
-    const response = await fetch(`https://farmers-market-1oeq.onrender.com/api/users/login`, {
+    const response = await fetch(`https://fetch-farm-web-service.onrender.com/api/users/login`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
@@ -27,7 +27,7 @@ export async function fetchLogin(username, password) {
 export const fetchUserData = async () => {
   const token = window.localStorage.getItem('token')
   try {
-    const response = await fetch('https://farmers-market-1oeq.onrender.com/api/users/me', {
+    const response = await fetch('https://fetch-farm-web-service.onrender.com/api/users/me', {
       headers: {
       'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`,
@@ -43,7 +43,7 @@ export const fetchUserData = async () => {
 export async function fetchSignUp(username, password, email) {
 
   try {
-    const response = await fetch(`https://farmers-market-1oeq.onrender.com/api/users/register`, {
+    const response = await fetch(`https://fetch-farm-web-service.onrender.com/api/users/register`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
@@ -68,7 +68,7 @@ export async function fetchUpdateUser(username, email) {
   const token = window.localStorage.getItem('token')
 
   try {
-    const response = await fetch(`https://farmers-market-1oeq.onrender.com/api/users/update/me`, {
+    const response = await fetch(`https://fetch-farm-web-service.onrender.com/api/users/update/me`, {
       method: "PATCH",
       headers: {
         'Content-Type': 'application/json',

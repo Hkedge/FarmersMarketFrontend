@@ -11,7 +11,7 @@ const GlutenFreeVeganProducts = ({setCartItemTotal, cartItemTotal}) => {
     setLoading(true);
     const fetchGlutenFreeVeganProducts = async () => {
       try {
-        const response = await fetch("https://farmers-market-1oeq.onrender.com/api/products/subcategory/Gluten-free%20&%20Vegan");
+        const response = await fetch("https://fetch-farm-web-service.onrender.com/api/products/subcategory/Gluten-free%20&%20Vegan");
         const data = await response.json();
         setProducts(data);
         setLoading(false);

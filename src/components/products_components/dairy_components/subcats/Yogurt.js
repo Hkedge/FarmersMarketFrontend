@@ -11,7 +11,7 @@ const YogurtProducts = ({setCartItemTotal, cartItemTotal}) => {
     setLoading(true);
     const fetchYogurtProducts = async () => {
       try {
-        const response = await fetch("https://farmers-market-1oeq.onrender.com/api/products/subcategory/Yogurt%20&%20Cultured%20Dairy/");
+        const response = await fetch("https://fetch-farm-web-service.onrender.com/api/products/subcategory/Yogurt%20&%20Cultured%20Dairy/");
         const data = await response.json();
         setProducts(data);
         setLoading(false);

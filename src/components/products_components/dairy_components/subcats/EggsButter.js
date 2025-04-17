@@ -11,7 +11,7 @@ const EggsButterProducts = ({setCartItemTotal, cartItemTotal}) => {
     setLoading(true);
     const fetchEggsButterProducts = async () => {
       try {
-        const response = await fetch("https://farmers-market-1oeq.onrender.com/api/products/subcategory/Eggs%20&%20Butter");
+        const response = await fetch("https://fetch-farm-web-service.onrender.com/api/products/subcategory/Eggs%20&%20Butter");
         const data = await response.json();
         setProducts(data);
         setLoading(false);

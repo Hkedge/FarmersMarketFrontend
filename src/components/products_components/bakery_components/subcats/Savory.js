@@ -12,7 +12,7 @@ const SavoryProducts = ({setCartItemTotal, cartItemTotal}) => {
     const fetchSavoryProducts = async () => {
       setLoading(true);
       try {
-        const response = await fetch("https://farmers-market-1oeq.onrender.com/api/products/subcategory/Savory%20Baked%20Goods");
+        const response = await fetch("https://fetch-farm-web-service.onrender.com/api/products/subcategory/Savory%20Baked%20Goods");
         const data = await response.json()
         setProducts(data);
         setLoading(false);

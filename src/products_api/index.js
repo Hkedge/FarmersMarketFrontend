@@ -1,6 +1,6 @@
 import { fetchUserData } from "../user_api";
 
-const BASE_URL = 'https://farmers-market-1oeq.onrender.com/api';
+const BASE_URL = 'https://fetch-farm-web-service.onrender.com/api';
 
 let token = null;
 let userData = null;
